@@ -4,55 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUNDA GOWRESWARI | Portfolio</title>
+    <title>Gowreswari Gunda | Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h2 class="logo">Gowreswari<span>.</span></h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="site-header">
+    <nav class="navbar">
+        <a href="#home" class="logo">Gowreswari <span>Gunda</span></a>
 
-    <section id="home" class="hero">
+        <button class="menu-toggle" aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HOME SECTION -->
+    <section class="hero" id="home">
         <div class="hero-content">
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
-            <h1>Hi, I'm <span>GUNDA GOWRESWARI</span></h1>
+            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hi, I'm<br>
+                <span>Gowreswari Gunda</span>
+            </h1>
+
             <h2>Aspiring Python Developer</h2>
+
             <p>
-                I'm a motivated fresher interested in Python development
-                and frontend technologies. I enjoy building useful
-                applications and solving real-world problems through code.
+                I'm a motivated fresher with knowledge in Python, HTML,
+                CSS, JavaScript, React.js and MySQL. I enjoy building
+                useful applications and solving real-world problems
+                through code.
             </p>
-            <a href="#projects" class="btn">View My Projects</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Projects</a>
+                <a href="#contact" class="btn outline">Contact Me</a>
+            </div>
+        </div>
+
+        <!-- PROFILE IMAGE ON RIGHT -->
+        <div class="profile-container">
+            <div class="profile-circle">
+                <img src="profile.jpg" alt="Gowreswari Gunda">
+            </div>
         </div>
     </section>
 
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-description">
-            I am a detail-oriented fresher with knowledge of Python,
-            HTML, CSS, JavaScript, React.js, and MySQL. I completed my
-            Bachelor of Electronics and Communication Engineering in 2026.
-            I am eager to apply my technical skills, learn new technologies,
-            and grow as a software developer.
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="section-heading">
+            <h2>ABOUT ME</h2>
+            <p>A little about my journey</p>
+        </div>
+
+        <p class="about-text">
+            I completed my Bachelor of Electronics and Communication
+            Engineering in 2026. I am interested in software development
+            and enjoy creating useful applications using programming
+            and web technologies.
         </p>
     </section>
 
-    <section id="skills" class="section dark-section">
-        <h2 class="section-title">Technical Skills</h2>
+    <!-- SKILLS SECTION -->
+    <section class="section" id="skills">
+        <div class="section-heading">
+            <h2>TECHNICAL SKILLS</h2>
+            <p>Technologies and tools I have learned</p>
+        </div>
 
-        <div class="card-container">
+        <div class="skills-grid">
             <div class="card">
                 <h3>Programming</h3>
                 <p>Python</p>
@@ -75,106 +106,193 @@
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <h2 class="section-title">My Projects</h2>
+    <!-- EDUCATION SECTION: THREE CARDS SIDE BY SIDE -->
+    <section class="section" id="education">
+        <div class="section-heading">
+            <h2>EDUCATION</h2>
+            <p>My academic journey and qualifications</p>
+        </div>
 
-        <div class="card-container">
+        <div class="education-grid">
+
+            <div class="card education-card">
+                <div class="education-icon">🎓</div>
+                <h3>Bachelor of Electronics and Communication Engineering</h3>
+                <p>GVPIHLR Institute</p>
+                <p><strong>Year:</strong> 2026</p>
+                <p><strong>Score:</strong> 8.14</p>
+            </div>
+
+            <div class="card education-card">
+                <div class="education-icon">📘</div>
+                <h3>Intermediate</h3>
+                <p>Government Junior College, S.Kota</p>
+                <p><strong>Year:</strong> 2022</p>
+                <p><strong>Percentage:</strong> 57.8%</p>
+            </div>
+
+            <div class="card education-card">
+                <div class="education-icon">📄</div>
+                <h3>SSC</h3>
+                <p>Government High School, Pendurthi</p>
+                <p><strong>Year:</strong> 2020</p>
+                <p><strong>Score:</strong> 9.8</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects">
+        <div class="section-heading">
+            <h2>MY PROJECTS</h2>
+            <p>Some projects I have worked on</p>
+        </div>
+
+        <div class="projects-grid">
+
             <div class="card project-card">
-                <h3>Head Gesture Controlled Wheelchair</h3>
-                <p>
-                    An assistive system designed to support independent
-                    living for disabled and elderly individuals. It uses
-                    head gestures to control wheelchair movement, safety
-                    sensors to detect obstacles, and voice-based home
-                    automation to operate lights and fans.
-                </p>
-                <p class="tech">Assistive Technology | Automation</p>
+                <div class="project-icon">♿</div>
+                <div>
+                    <h3>Head Gesture Controlled Wheelchair</h3>
+                    <p>
+                        An assistive system designed to help disabled
+                        and elderly individuals live independently.
+                        It uses head gestures to control wheelchair
+                        movement, safety sensors to detect obstacles,
+                        and voice-based home automation.
+                    </p>
+                    <div class="tags">Python | Sensors | Automation</div>
+                </div>
             </div>
 
             <div class="card project-card">
-                <h3>Food Ordering Management System</h3>
-                <p>
-                    A Python application that allows users to register,
-                    browse restaurants and food items, add items to a cart,
-                    place orders, and view order history. The admin panel
-                    supports restaurant, menu, order, user, and sales
-                    management.
-                </p>
-                <p class="tech">Python | Management System</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="section dark-section">
-        <h2 class="section-title">Education</h2>
-
-        <div class="education-card">
-            <h3>Bachelor of Electronics and Communication Engineering</h3>
-            <p>GVPIHLR Institute | 2026</p>
-            <p>Score: 8.14 (as listed in my resume)</p>
-        </div>
-
-        <div class="education-card">
-            <h3>Intermediate</h3>
-            <p>Government Junior College, S.Kota | 2022</p>
-            <p>Percentage: 57.8%</p>
-        </div>
-
-        <div class="education-card">
-            <h3>SSC</h3>
-            <p>Government High School, Pendurthi | 2020</p>
-            <p>Score: 9.8 (as listed in my resume)</p>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2 class="section-title">Certifications & Achievements</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Certifications & Training</h3>
-                <p>• AWS Academy Graduate – Cloud Foundation</p>
-                <p>• NPTEL – CMOS Digital VLSI Design</p>
-                <p>• Machine Learning</p>
-                <p>• NIPAM IP Awareness Program</p>
-                <p>• Unmanned Aerial Systems Workshop</p>
-                <p>• CNS Internship – Airports Authority of India</p>
+                <div class="project-icon">🍽️</div>
+                <div>
+                    <h3>Food Ordering Management System</h3>
+                    <p>
+                        A Python application that allows users to browse
+                        food items, add items to a cart, place orders
+                        and view order history. Administrators can
+                        manage menus, users and orders.
+                    </p>
+                    <div class="tags">Python | Management System</div>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Achievements</h3>
-                <p>🏆 Carroms Winner</p>
-                <p>🏆 Throwball Winner</p>
-                <h3>Soft Skills</h3>
-                <p>Communication, Active Listening, Problem-Solving,
-                   Patience, Leadership, Time Management</p>
-            </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact-section">
-        <h2 class="section-title">Contact Me</h2>
-        <p>I'm interested in entry-level developer opportunities.</p>
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section" id="certifications">
+        <div class="section-heading">
+            <h2>CERTIFICATIONS & ACHIEVEMENTS</h2>
+        </div>
 
-        <p>Email:
-            <a href="mailto:gowrigunda2005@gmail.com">
-                gowrigunda2005@gmail.com
-            </a>
-        </p>
-
-        <p>Phone: 6304626332</p>
-
-        <p>LinkedIn:
-            <a href="https://www.linkedin.com/in/gowreswari-gunda-8a535125b"
-               target="_blank" rel="noopener noreferrer">
-                Visit My LinkedIn Profile
-            </a>
-        </p>
+        <div class="card">
+            <p>AWS Academy Graduate – Cloud Foundation</p>
+            <p>NPTEL – CMOS Digital VLSI Design</p>
+            <p>Machine Learning</p>
+            <p>NIPAM IP Awareness Program</p>
+            <p>Unmanned Aerial Systems Workshop</p>
+            <p>CNS Internship – Airports Authority of India</p>
+            <p>Achievements: Carroms Winner, Throwball Winner</p>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2026 GUNDA GOWRESWARI| Personal Portfolio</p>
-    </footer>
+    <!-- CONTACT SECTION WITH INPUTS AND BUTTONS -->
+    <section class="section contact-section" id="contact">
+        <div class="section-heading">
+            <h2>CONTACT ME</h2>
+            <p>Let's connect and build something great!</p>
+        </div>
 
-    <script src="portfolio.js"></script>
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>Feel free to contact me for opportunities or collaboration.</p>
+
+                <div class="contact-item">
+                    <span>✉</span>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:gowrigunda2005@gmail.com">
+                            gowrigunda2005@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>☎</span>
+                    <div>
+                        <h4>Phone</h4>
+                        <a href="tel:6304626332">6304626332</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://linkedin.com/in/gunda-gowreswari-33129b393"
+                           target="_blank" rel="noopener noreferrer">
+                            View My Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                           placeholder="Enter subject" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Write your message here..."
+                              required></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="send-btn">
+                        ✉ Send Message
+                    </button>
+
+                    <button type="reset" class="clear-btn">
+                        Clear
+                    </button>
+                </div>
+
+                <p id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Gowreswari Gunda | Personal Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
